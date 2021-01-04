@@ -1,0 +1,59 @@
+{
+  "name": "react-native-draggable-section-list",
+  "version": "1.0.0",
+  "description": "A draggable SectionList for ReactNative using `react-native-draggable-flatlist` found: https://github.com/computerjazz/react-native-draggable-flatlist ",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "react-native",
+    "sortable",
+    "draggable",
+    "flatlist",
+    "drag",
+    "drop",
+    "sort",
+    "list",
+    "sectionlist",
+    "section"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mirkoRainer/react-native-draggable-section-list.git"
+  },
+  "author": "Gary Krause",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mirkoRainer/react-native-draggable-section-list/issues"
+  },
+  "homepage": "https://github.com/mirkoRainer/react-native-draggable-section-list#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-native-draggable-flatlist": "https://github.com/mirkoRainer/react-native-draggable-flatlist/tarball/Publish"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.59.0",
+    "react-native-gesture-handler": "^1.0.0",
+    "react-native-reanimated": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "prettier": "^2.2.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.1.3"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
